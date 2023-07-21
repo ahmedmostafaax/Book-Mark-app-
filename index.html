@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <section>
+            <div class="container ">
+                <div class="head mt-5 position-relative text-center">
+                    <h1 class="py-2 position-relative mt-5">
+                        Bookmarker
+                    </h1>
+                </div>
+                <div class="line"></div>
+                <div class="bookmark w-100 p-3 py-4 mt-4 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-book-bookmark m-2"></i>
+                    <h2>Bookmark your favorite sites</h2>
+                    <i class="fa-solid fa-book-bookmark m-2"></i>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="container d-grid" id="labels">
+                <div class="col-md-11 mt-5">
+                    <label class="pb-2  fw-semibold"> <i class="fa-solid fa-book-bookmark"></i>Site Name</label>
+                    <input type="text"  placeholder="Bookmark Name" class="form-control " id="bookName">
+                  
+                    <label class="pb-2 mt-4 fw-semibold"> <i class="fa-solid fa-book-bookmark "></i>Site url</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control " id="bookurl">
+                    <button onclick="addBook()" class="btn btn-danger mt-4">Submit</button>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <table class="table">
+                    <thead>
+                        <th>index</th>
+                        <th>website name</th>
+                        <th>visit</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="demo">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
